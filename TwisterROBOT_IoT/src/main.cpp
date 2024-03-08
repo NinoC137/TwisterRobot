@@ -2,6 +2,7 @@
 #include "WiFi_BLE.h"
 #include "my_MPU6050.h"
 #include "GUI_Driver.h"
+#include "ServoControl.h"
 
 static void SystemData_GUI();
 

@@ -23,4 +23,6 @@ private:
     }
 };
 
+void Servo_setup();
+
 #endif // !_SERVOCONTROL__H

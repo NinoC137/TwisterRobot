@@ -1,7 +1,6 @@
 #include "ServoControl.h"
 
 // Servo LegServo_Left("left");
-
 // Servo LegServo_Right("right");
 
 static uint16_t TimerFreq = 50000;
