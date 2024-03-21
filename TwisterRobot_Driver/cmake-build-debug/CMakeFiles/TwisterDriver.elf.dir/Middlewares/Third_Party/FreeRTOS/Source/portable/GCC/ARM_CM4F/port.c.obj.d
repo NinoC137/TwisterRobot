@@ -1,0 +1,19 @@
+CMakeFiles/TwisterDriver.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
+ e\:\compiler\lib\gcc\arm-none-eabi\10.2.1\include\stddef.h \
+ e\:\compiler\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
+ e\:\compiler\arm-none-eabi\include\stdint.h \
+ e\:\compiler\arm-none-eabi\include\machine\_default_types.h \
+ e\:\compiler\arm-none-eabi\include\sys\features.h \
+ e\:\compiler\arm-none-eabi\include\_newlib_version.h \
+ e\:\compiler\arm-none-eabi\include\sys\_intsup.h \
+ e\:\compiler\arm-none-eabi\include\sys\_stdint.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Core\Inc/FreeRTOSConfig.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ E\:\TwisterRobot\TwisterRobot_Driver\Middlewares\Third_Party\FreeRTOS\Source\include/list.h

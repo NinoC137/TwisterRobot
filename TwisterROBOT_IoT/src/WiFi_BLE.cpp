@@ -64,12 +64,18 @@ void MyCallbacks::onWrite(BLECharacteristic *pCharacteristic) // 写方法
 
 void WiFi_BLE_setUp()
 {
-
     WiFi_Data.WiFi_store[0].SSID = (char *)STA_SSID;
     WiFi_Data.WiFi_store[0].PassWord = (char *)STA_PASS;
 
     WiFi.mode(WIFI_STA);
     WiFi.begin(WiFi_Data.WiFi_store[0].SSID, WiFi_Data.WiFi_store[0].PassWord);
+
+    static int counter;
+    while(WiFi.status() != WL_CONNECTED && counter < 5){
+        delay(100);
+        WiFi.begin(WiFi_Data.WiFi_store[0].SSID, WiFi_Data.WiFi_store[0].PassWord);
+        counter++;
+    }
 
     WiFi_Data.WiFi_store[0].ipv4 = WiFi.localIP();
     WiFi_Data.WiFi_store[0].MacAddress = WiFi.macAddress().c_str();
@@ -82,13 +88,13 @@ void WiFi_BLE_setUp()
         pos = WiFi_Data.WiFi_store[0].devID.find(":");
     }
 
-    if (WiFi_Data.WiFi_store[0].ipv4 != 0)
+    if (WiFi.status() == WL_CONNECTED)
     {
-        ProjectData.wifistatus = true;
+        ProjectData.wifistatus = 0;
     }
     else
     {
-        ProjectData.wifistatus = false;
+        ProjectData.wifistatus = 1;
     }
 
     // 生成初始CRC值
@@ -99,7 +105,7 @@ void WiFi_BLE_setUp()
     //  char key_crc[64] = {0};
     //  md5Check.getChars(key_crc);
     //  ProjectData.old_CRC = std::string(key_crc);
-    ProjectData.old_CRC = "123456";
+    // ProjectData.old_CRC = "123456";
 
     Serial.print("IPv4 address:");
     Serial.println(WiFi_Data.WiFi_store[0].ipv4);
@@ -118,18 +124,18 @@ void WiFi_BLE_setUp()
     pServer->setCallbacks(new MyServerCallbacks()); // 设置连接和断开调用类
 
     pService->addCharacteristic(&RX_Characteristics);
-    RX_Descriptor.setValue("RX String");
+    RX_Descriptor.setValue("BLE Recieve");
     RX_Characteristics.addDescriptor(new BLE2902());
 
     pService->addCharacteristic(&TX_Characteristics);
-    TX_Descriptor.setValue("TX String");
+    TX_Descriptor.setValue("BLE Transmit");
     TX_Characteristics.addDescriptor(new BLE2902());
 
     RX_Characteristics.setCallbacks(new MyCallbacks()); // 设置回调函数
     TX_Characteristics.setCallbacks(new MyCallbacks()); // 设置回调函数
 
-    RX_Characteristics.setValue("RX init"); // 发送信息
-    TX_Characteristics.setValue("TX init"); // 发送信息
+    RX_Characteristics.setValue("BLE Recieve init"); // 发送信息
+    TX_Characteristics.setValue("BLE Transmit init"); // 发送信息
 
     pService->start();
     pServer->getAdvertising()->start();
@@ -151,100 +157,7 @@ void BLEHandler()
 
         switch (cmd->valueint)
         {
-        case 1:
-            cmd1();
-            break;
-        case 2:
-            cmd2(root);
-            break;
-        case 3:
-            cmd3(root);
-            break;
-        case 4:
-            cmd4(root);
-            break;
-        case 5:
-            if (CRC_CHECKED == 1)
-            {
-                cmd5(root);
-            }
-            else
-            {
-                TX_Characteristics.setValue("CRC NOT PASS!");
-                TX_Characteristics.notify();
-            }
-            break;
-        case 6:
-            if (CRC_CHECKED == 1)
-            {
-                cmd6(root);
-            }
-            else
-            {
-                TX_Characteristics.setValue("CRC NOT PASS!");
-                TX_Characteristics.notify();
-            }
-            break;
-        case 7:
-            cmd7(root);
-            break;
-        case 8:
-            cmd8(root);
-            break;
-        case 9:
-            if (CRC_CHECKED == 1)
-            {
-                cmd9(root);
-            }
-            else
-            {
-                TX_Characteristics.setValue("CRC NOT PASS!");
-                TX_Characteristics.notify();
-            }
-            break;
-        case 10:
-            cmd10(root);
-            break;
-        case 12:
-            if (CRC_CHECKED == 1)
-            {
-                cmd12(root);
-            }
-            else
-            {
-                TX_Characteristics.setValue("CRC NOT PASS!");
-                TX_Characteristics.notify();
-            }
-            break;
-        case 13:
-            cmd13(root);
-            break;
-        case 14:
-            if (CRC_CHECKED == 1)
-            {
-                cmd14(root);
-            }
-            else
-            {
-                TX_Characteristics.setValue("CRC NOT PASS!");
-                TX_Characteristics.notify();
-            }
-            break;
-        case 15:
-            cmd15(root);
-            break;
-        case 16:
-            cmd16();
-            break;
-        case 17:
-            cmd17();
-            break;
-        case 18:
-            cmd18(root);
-            break;
-        case 19:
-            cmd19(root);
-            break;
+
         default:
             Serial.printf("error cmd!\r\n");
             TX_Characteristics.setValue("received cmd: ERROR!");
@@ -279,105 +192,6 @@ void WiFiHandler()
 
             switch (cmd->valueint)
             {
-            case 1:
-                cmd1();
-                break;
-            case 2:
-                cmd2(root);
-                break;
-            case 3:
-                cmd3(root);
-                break;
-            case 4:
-                cmd4(root);
-                break;
-            case 5:
-                if (CRC_CHECKED == 1)
-                {
-                    cmd5(root);
-                }
-                else
-                {
-                    http.POST("CRC NOT PASS!");
-                    TX_Characteristics.setValue("CRC NOT PASS!");
-                    TX_Characteristics.notify();
-                }
-                break;
-            case 6:
-                if (CRC_CHECKED == 1)
-                {
-                    cmd6(root);
-                }
-                else
-                {
-                    http.POST("CRC NOT PASS!");
-                    TX_Characteristics.setValue("CRC NOT PASS!");
-                    TX_Characteristics.notify();
-                }
-                break;
-            case 7:
-                cmd7(root);
-                break;
-            case 8:
-                cmd8(root);
-                break;
-            case 9:
-                if (CRC_CHECKED == 1)
-                {
-                    cmd9(root);
-                }
-                else
-                {
-                    http.POST("CRC NOT PASS!");
-                    TX_Characteristics.setValue("CRC NOT PASS!");
-                    TX_Characteristics.notify();
-                }
-                break;
-            case 10:
-                cmd10(root);
-                break;
-            case 12:
-                if (CRC_CHECKED == 1)
-                {
-                    cmd12(root);
-                }
-                else
-                {
-                    http.POST("CRC NOT PASS!");
-                    TX_Characteristics.setValue("CRC NOT PASS!");
-                    TX_Characteristics.notify();
-                }
-                break;
-            case 13:
-                cmd13(root);
-                break;
-            case 14:
-                if (CRC_CHECKED == 1)
-                {
-                    cmd14(root);
-                }
-                else
-                {
-                    http.POST("CRC NOT PASS!");
-                    TX_Characteristics.setValue("CRC NOT PASS!");
-                    TX_Characteristics.notify();
-                }
-                break;
-            case 15:
-                cmd15(root);
-                break;
-            case 16:
-                cmd16();
-                break;
-            case 17:
-                cmd17();
-                break;
-            case 18:
-                cmd18(root);
-                break;
-            case 19:
-                cmd19(root);
-                break;
             default:
                 Serial.printf("error cmd!\r\n");
 
@@ -395,6 +209,12 @@ void ProjectDataUpdate()
     HeartBeatUpdate();
     updateLocalTime();
     static int cnt_dataupdate;
+
+    if(WiFi.status() == WL_CONNECTED){
+        ProjectData.wifistatus = 0;
+    }else{
+        ProjectData.wifistatus = 1;
+    }
 
     if (ProjectData.runTime >= ProjectData.worktime)
     {

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="TwisterDriver" targetName="TwisterDriver.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e2c7c2d-a2ac-461a-be57-7a8b8cadda32" name="Changes" comment="完成了速度-电流环控制,位置-电流环控制,位置-速度-电流环控制">
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/include/my_MPU6050.h" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/include/my_MPU6050.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/platformio.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/platformio.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/WiFi_BLE.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/WiFi_BLE.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/my_mpu6050.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/my_mpu6050.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="212" />
+        <option value="92" />
+        <option value="1508" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="Name" />
+        <option value="Value" />
+        <option value="Description" />
+      </list>
+    </option>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.5" />
+  </component>
+  <component name="ProjectId" id="2Y1yLTFjxyLFJ3q8q4Et7mCXqaW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Clion_for_STM32/TwisterDriver/Software/UserApp/LCD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Clion_for_STM32\TwisterDriver\Software\UserApp\LCD" />
+      <recent name="E:\Clion_for_STM32\TwisterDriver\UserApp\Servo" />
+      <recent name="E:\Clion_for_STM32\TwisterDriver\UserApp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Clion_for_STM32\TwisterDriver\Software\UserApp\cJsonParse" />
+      <recent name="E:\Clion_for_STM32\TwisterDriver\UserApp\cJSON" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.TwisterDriver.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwisterDriver.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TwisterDriver" TARGET_NAME="TwisterDriver.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TwisterDriver" RUN_TARGET_NAME="TwisterDriver.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwisterDriver.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TwisterDriver" TARGET_NAME="TwisterDriver.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="TwisterDriver" RUN_TARGET_NAME="TwisterDriver.elf">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="E:\Clion_for_STM32\TwisterDriver\Software\stm32g4x.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.TwisterDriver.elf" />
+      <item itemvalue="OpenOCD Download &amp; Run.TwisterDriver.elf" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e2c7c2d-a2ac-461a-be57-7a8b8cadda32" name="Changes" comment="" />
+      <created>1699707324981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699707324981</updated>
+      <workItem from="1699707364990" duration="215000" />
+      <workItem from="1699707945360" duration="1877000" />
+      <workItem from="1700189383671" duration="3424000" />
+      <workItem from="1700211319917" duration="11853000" />
+      <workItem from="1701420455416" duration="5523000" />
+      <workItem from="1701426751733" duration="220000" />
+      <workItem from="1705051582550" duration="878000" />
+      <workItem from="1709116771890" duration="2490000" />
+      <workItem from="1709285749759" duration="8712000" />
+      <workItem from="1709629422677" duration="29611000" />
+      <workItem from="1709870124972" duration="15154000" />
+      <workItem from="1709955077182" duration="17000" />
+      <workItem from="1709955105071" duration="2293000" />
+      <workItem from="1709974947820" duration="9062000" />
+      <workItem from="1709990120288" duration="5138000" />
+      <workItem from="1710044833924" duration="7356000" />
+      <workItem from="1710146185180" duration="7123000" />
+      <workItem from="1710164837254" duration="3127000" />
+      <workItem from="1710209932490" duration="14606000" />
+      <workItem from="1710298108971" duration="30788000" />
+      <workItem from="1710383376616" duration="16228000" />
+      <workItem from="1710411966990" duration="2756000" />
+      <workItem from="1710424711457" duration="2582000" />
+      <workItem from="1710503082050" duration="9718000" />
+      <workItem from="1710555749481" duration="20896000" />
+      <workItem from="1710594548608" duration="81000" />
+      <workItem from="1710652873353" duration="13000" />
+      <workItem from="1710755074560" duration="73000" />
+      <workItem from="1710755194710" duration="2450000" />
+      <workItem from="1710833242339" duration="4887000" />
+      <workItem from="1710838942977" duration="1362000" />
+      <workItem from="1710850345442" duration="1640000" />
+    </task>
+    <task id="LOCAL-00001" summary="实现了SVPWM下的FOC闭环位置环控制, 效果稳定不抖动">
+      <option name="closed" value="true" />
+      <created>1709706416536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709706416537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="实现了SVPWM下的FOC闭环速度环控制, 效果稳定不抖动">
+      <option name="closed" value="true" />
+      <created>1709719084487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709719084487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="实现了UART的中断接收, 现在可以有效地完整接收JSON数据包">
+      <option name="closed" value="true" />
+      <created>1709890218921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709890218921</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Json数据包在解析完成之后, 通过消息队列的方式传入数据包解析线程, 提高代码解耦度">
+      <option name="closed" value="true" />
+      <created>1710045633047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710045633047</updated>
+    </task>
+    <task id="LOCAL-00005" summary="规范了JSON数据包的格式, 待填充代码实现部分">
+      <option name="closed" value="true" />
+      <created>1710051392553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710051392553</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成了部分JSON解析的内部实现及测试,下一步进行FOC的面向对象编程">
+      <option name="closed" value="true" />
+      <created>1710064578679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710064578679</updated>
+    </task>
+    <task id="LOCAL-00007" summary="实现了FOC的面向对象结构及双路FOC的驱动, 包括位置环与速度环闭环控制">
+      <option name="closed" value="true" />
+      <created>1710225354751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710225354751</updated>
+    </task>
+    <task id="LOCAL-00008" summary="实现了双路闭环控制, 完成了双路电流的采样, 未做电压偏置的处理">
+      <option name="closed" value="true" />
+      <created>1710340048578</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710340048578</updated>
+    </task>
+    <task id="LOCAL-00009" summary="完成了双路FOC的三相电流采集与运算">
+      <option name="closed" value="true" />
+      <created>1710394585789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710394585789</updated>
+    </task>
+    <task id="LOCAL-00010" summary="验证了FOC的电流环闭环控制 第二路的FOC无法正常驱动 定性为硬件故障">
+      <option name="closed" value="true" />
+      <created>1710512939333</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710512939333</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完成了速度环为内环,位置环为外环的串级PID控制 电流明显比单独位置环小很多 控制效果很棒">
+      <option name="closed" value="true" />
+      <created>1710564496965</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710564496965</updated>
+    </task>
+    <task id="LOCAL-00012" summary="完成了速度-电流环控制,位置-电流环控制,位置-速度-电流环控制">
+      <option name="closed" value="true" />
+      <created>1710581855252</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710581855252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="实现了SVPWM下的FOC闭环位置环控制, 效果稳定不抖动" />
+    <MESSAGE value="实现了SVPWM下的FOC闭环速度环控制, 效果稳定不抖动" />
+    <MESSAGE value="实现了UART的中断接收, 现在可以有效地完整接收JSON数据包" />
+    <MESSAGE value="Json数据包在解析完成之后, 通过消息队列的方式传入数据包解析线程, 提高代码解耦度" />
+    <MESSAGE value="规范了JSON数据包的格式, 待填充代码实现部分" />
+    <MESSAGE value="完成了部分JSON解析的内部实现及测试,下一步进行FOC的面向对象编程" />
+    <MESSAGE value="实现了FOC的面向对象结构及双路FOC的驱动, 包括位置环与速度环闭环控制" />
+    <MESSAGE value="实现了双路闭环控制, 完成了双路电流的采样, 未做电压偏置的处理" />
+    <MESSAGE value="完成了双路FOC的三相电流采集与运算" />
+    <MESSAGE value="验证了FOC的电流环闭环控制 第二路的FOC无法正常驱动 定性为硬件故障" />
+    <MESSAGE value="完成了速度环为内环,位置环为外环的串级PID控制 电流明显比单独位置环小很多 控制效果很棒" />
+    <MESSAGE value="完成了速度-电流环控制,位置-电流环控制,位置-速度-电流环控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了速度-电流环控制,位置-电流环控制,位置-速度-电流环控制" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h</url>
+          <line>1495</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
+        <watch expression="Speed_PID" />
+        <watch expression="Balance_PID" />
+        <watch expression="yaw_pitch_roll" />
+        <watch expression="FOCMotor_Right" />
+        <watch expression="FOCMotor_Left" />
+        <watch expression="sysLog" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

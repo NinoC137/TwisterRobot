@@ -14,7 +14,7 @@
 #include <BLEDevice.h>
 #include <BLE2902.h>
 
-#define bleServer "BLE_SERVER"
+#define bleServer "TwisterRobot"
 #define STA_SSID "NinoC137"
 #define STA_PASS "zyx666...+"
 
@@ -72,6 +72,8 @@ class MyCallbacks : public BLECharacteristicCallbacks
 public:
   void onWrite(BLECharacteristic *pCharacteristic);
 };
+
+extern std::string value;
 
 extern char WiFiStatus_str[2][30];
 

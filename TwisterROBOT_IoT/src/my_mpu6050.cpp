@@ -5,6 +5,8 @@
 #include "sstream"
 #include <iomanip>
 
+#include "cJSON.h"
+
 #define OUTPUT_READABLE_YAWPITCHROLL
 
 MPU6050 mpu;
@@ -126,4 +128,21 @@ void MPU6050_GUILog(){
   GUI_logPrint(MPU_Log);
   ss.clear();
   GUI_logPrint("----------------------\r");
+}
+
+void MPU6050_SendJSONPack(){
+  cJSON *IMUDataJson = cJSON_CreateObject();
+  cJSON_AddItemToObject(IMUDataJson, "cmd", cJSON_CreateNumber(10));
+  cJSON_AddItemToObject(IMUDataJson, "yaw", cJSON_CreateNumber(ypr[0]));
+  cJSON_AddItemToObject(IMUDataJson, "pitch", cJSON_CreateNumber(ypr[1]));
+  cJSON_AddItemToObject(IMUDataJson, "roll", cJSON_CreateNumber(ypr[2]));
+
+  char* JsonString = cJSON_Print(IMUDataJson);
+
+  Serial1.print(JsonString);
+  // TX_Characteristics.setValue(JsonString);
+  // TX_Characteristics.notify();
+
+  cJSON_Delete(IMUDataJson);
+  free(JsonString);
 }
