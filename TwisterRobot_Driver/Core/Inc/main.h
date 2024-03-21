@@ -52,7 +52,7 @@ typedef struct JsonPackage{
 typedef struct {
     const char* name;
     const char* lastUpgradeTime;
-    long sysRunTime_ms;
+    long sysRunTime;
     long beatTime_ms;
 } t_sysLog;
 /* USER CODE END ET */

@@ -57,7 +57,7 @@ void res_sendHeartBeat(){
     cJSON *response_root = cJSON_CreateObject();
     cJSON_AddItemToObject(response_root, "name", cJSON_CreateString(sysLog.name));
     cJSON_AddItemToObject(response_root, "lastUpgrade", cJSON_CreateString(sysLog.lastUpgradeTime));
-    cJSON_AddItemToObject(response_root, "sysRunTime_ms", cJSON_CreateNumber(sysLog.sysRunTime_ms));
+    cJSON_AddItemToObject(response_root, "sysRunTime_ms", cJSON_CreateNumber(sysLog.sysRunTime));
     cJSON_AddItemToObject(response_root, "beatTime_ms", cJSON_CreateNumber(sysLog.beatTime_ms));
 
     char* responseText = cJSON_Print(response_root);

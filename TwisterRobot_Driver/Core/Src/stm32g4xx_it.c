@@ -267,8 +267,13 @@ void TIM7_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim7);
   /* USER CODE BEGIN TIM7_IRQn 1 */
     static long counter;
+    static int timer;
+    timer++;
     counter++;
-    sysLog.sysRunTime_ms++;
+    if(timer == 1000){
+        sysLog.sysRunTime++;
+        timer = 0;
+    }
     if(counter == sysLog.beatTime_ms){
         res_sendHeartBeat();
         counter = 0;

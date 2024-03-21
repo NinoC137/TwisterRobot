@@ -209,11 +209,18 @@ void ProjectDataUpdate()
     HeartBeatUpdate();
     updateLocalTime();
     static int cnt_dataupdate;
+    static int counter = 0;
+    counter++;
 
     if(WiFi.status() == WL_CONNECTED){
         ProjectData.wifistatus = 0;
     }else{
         ProjectData.wifistatus = 1;
+        if(counter > 200){
+            counter = 0;
+            WiFi.mode(WIFI_STA);
+            WiFi.begin(WiFi_Data.WiFi_store[0].SSID, WiFi_Data.WiFi_store[0].PassWord);
+        }
     }
 
     if (ProjectData.runTime >= ProjectData.worktime)

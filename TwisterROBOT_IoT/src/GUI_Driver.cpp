@@ -2,6 +2,8 @@
 
 #include <stdarg.h>
 
+extern SemaphoreHandle_t GUILog_Mutex;
+
 TFT_eSPI tft = TFT_eSPI();
 
 // The scrolling area must be a integral multiple of TEXT_HEIGHT
@@ -66,6 +68,7 @@ void GUI_setup()
 
 void GUI_logPrint(std::string logStr)
 {
+    xSemaphoreTake(GUILog_Mutex, portMAX_DELAY);
     for (char character : logStr)
     {
         char data = character;
@@ -81,6 +84,7 @@ void GUI_logPrint(std::string logStr)
             blank[(18 + (yStart - TOP_FIXED_AREA) / TEXT_HEIGHT) % 19] = xPos; // Keep a record of line lengths
         }
     }
+    xSemaphoreGive(GUILog_Mutex);
 }
 
 void GUI_sysPrint(int32_t x, int32_t y, const char* str, ...){

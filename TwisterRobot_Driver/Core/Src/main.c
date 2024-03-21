@@ -68,8 +68,8 @@ osThreadId defaultTaskHandle;
 t_sysLog sysLog = {
         .name = "TwisterRobot v1.0",
         .lastUpgradeTime = __DATE__,
-        .sysRunTime_ms = 0,
-        .beatTime_ms = 500
+        .sysRunTime = 0,
+        .beatTime_ms = 1000
 };
 /* USER CODE END PV */
 
