@@ -12,7 +12,7 @@ extern UART_HandleTypeDef huart3;
 
 extern osMutexId printfMutex;
 
-char uart3Buffer[256];
+char uart3Buffer[512];
 
 void uart_printf(const char* format, ...) {
 //    osMutexWait(printfMutex, portMAX_DELAY);
