@@ -21,17 +21,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e2c7c2d-a2ac-461a-be57-7a8b8cadda32" name="Changes" comment="完成了速度-电流环控制,位置-电流环控制,位置-速度-电流环控制">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/WiFi_BLE.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/WiFi_BLE.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TwisterROBOT_IoT/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/app_freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/app_freertos.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32g4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32g4xx_hal_msp.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32g4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32g4xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwisterDriver.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/TwisterDriver.ioc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserApp/cJsonParse/cmd_Parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/UserApp/cJsonParse/cmd_Parse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserApp/retarget/retarget.c" beforeDir="false" afterPath="$PROJECT_DIR$/UserApp/retarget/retarget.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserApp/retarget/retarget.h" beforeDir="false" afterPath="$PROJECT_DIR$/UserApp/retarget/retarget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/app_freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/app_freertos.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/FOC/FOC.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/FOC/FOC.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/FOC/my_PID.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/FOC/my_PID.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/stm32g4xx_hal_msp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/stm32g4xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/Core/Src/stm32g4xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/cJsonParse/cmd_Parse.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/cJsonParse/cmd_Parse.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/retarget/retarget.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TwisterDriver.elf.dir/UserApp/retarget/retarget.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TwisterDriver.hex" afterDir="false" />
@@ -81,26 +91,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Clion_for_STM32/TwisterDriver/Software/UserApp/LCD",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Clion_for_STM32/TwisterDriver/Software/UserApp/LCD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Clion_for_STM32\TwisterDriver\Software\UserApp\LCD" />
@@ -113,6 +123,11 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.TwisterDriver.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TwisterDriver.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TwisterDriver" TARGET_NAME="TwisterDriver.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TwisterDriver" RUN_TARGET_NAME="TwisterDriver.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -172,7 +187,9 @@
       <workItem from="1710838942977" duration="1362000" />
       <workItem from="1710850345442" duration="1640000" />
       <workItem from="1711014050676" duration="3000" />
-      <workItem from="1711017023469" duration="3712000" />
+      <workItem from="1711017023469" duration="4570000" />
+      <workItem from="1711071780271" duration="387000" />
+      <workItem from="1711072676106" duration="6418000" />
     </task>
     <task id="LOCAL-00001" summary="实现了SVPWM下的FOC闭环位置环控制, 效果稳定不抖动">
       <option name="closed" value="true" />
@@ -321,12 +338,6 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
-        <watch expression="Speed_PID" />
-        <watch expression="Balance_PID" />
-        <watch expression="yaw_pitch_roll" />
-        <watch expression="FOCMotor_Right" />
-        <watch expression="FOCMotor_Left" />
-        <watch expression="sysLog" />
         <watch expression="huart3" />
       </configuration>
     </watches-manager>

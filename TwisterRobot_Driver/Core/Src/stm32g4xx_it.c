@@ -268,6 +268,7 @@ void TIM7_IRQHandler(void)
   /* USER CODE BEGIN TIM7_IRQn 1 */
     static long counter;
     static int timer;
+    static int uartStartFlag = 0;
     timer++;
     counter++;
     if(timer == 1000){
@@ -275,6 +276,10 @@ void TIM7_IRQHandler(void)
         timer = 0;
     }
     if(counter == sysLog.beatTime_ms){
+        if(uartStartFlag == 0){
+            HAL_UART_Receive_IT(&huart3, (uint8_t*)&uart3Buffer, 1);
+        }
+        uartStartFlag = 1;
         res_sendHeartBeat();
         counter = 0;
     }

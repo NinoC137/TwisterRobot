@@ -46,7 +46,7 @@ extern "C" {
 /* USER CODE BEGIN ET */
 typedef struct JsonPackage{
     int counter;
-    char JsonString[128];
+    char* JsonString;
 } t_JsonPackage;
 
 typedef struct {

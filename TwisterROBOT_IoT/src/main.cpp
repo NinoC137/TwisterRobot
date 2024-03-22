@@ -52,7 +52,7 @@ void SensorTaskThread(void *argument)
   {
     MPU6050_getData();
     MPU6050_SendJSONPack();
-    vTaskDelay(1000);
+    vTaskDelay(200);
   }
 }
 

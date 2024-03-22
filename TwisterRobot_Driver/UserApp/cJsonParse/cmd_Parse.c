@@ -262,14 +262,14 @@ void cmd_setIMUValue(cJSON *root){
     yaw_pitch_roll[1] = (float)cmd_pitch->valuedouble;
     yaw_pitch_roll[2] = (float)cmd_roll->valuedouble;
 
-    cJSON *response_root = cJSON_CreateObject();
-    cJSON_AddItemToObject(response_root, "res", cJSON_CreateNumber(0));
-    cJSON_AddItemToObject(response_root, "cmd", cJSON_CreateNumber(10));
-
-    char* responseText = cJSON_Print(response_root);
-
-    JSON_response("%s", responseText);
-
-    cJSON_Delete(response_root);
-    free(responseText);
+//    cJSON *response_root = cJSON_CreateObject();
+//    cJSON_AddItemToObject(response_root, "res", cJSON_CreateNumber(0));
+//    cJSON_AddItemToObject(response_root, "cmd", cJSON_CreateNumber(10));
+//
+//    char* responseText = cJSON_Print(response_root);
+//
+//    JSON_response("%s", responseText);
+//
+//    cJSON_Delete(response_root);
+//    free(responseText);
 }

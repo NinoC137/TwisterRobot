@@ -107,8 +107,6 @@ void LCDTask(void const *argument) {
 }
 
 void UARTTask(void const *argument) {
-    HAL_UART_Receive_IT(&huart3, (uint8_t*)&uart3Buffer, 1);
-
     osEvent JsonQueueEvt;
     t_JsonPackage *JsonBuffer = NULL;
 

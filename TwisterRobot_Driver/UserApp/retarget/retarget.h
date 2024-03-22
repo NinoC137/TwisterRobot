@@ -12,7 +12,7 @@
 #include "stdarg.h"
 #include "string.h"
 
-extern char uart3Buffer[128];
+extern char uart3Buffer[256];
 
 void uart_printf(const char *format, ...);
 

@@ -49,5 +49,6 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "E:/TwisterRobot/TwisterROBOT_IoT/.pio/libdeps/esp32-s3-devkitc-1/TFT_eSPI"
 }

@@ -147,7 +147,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
                     uart3_RxStatus = 0;
 
                     t_JsonPackage *JsonPtr = osPoolAlloc(JsonQ_Mem);
-                    memcpy(JsonPtr->JsonString, uart3Buffer, sizeof(uart3Buffer));
+                    JsonPtr->JsonString = uart3Buffer;
                     osMessagePut(JsonQueueHandle, (uint32_t)JsonPtr, 0);
                 }
                 break;
